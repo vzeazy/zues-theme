@@ -212,3 +212,4 @@
 	  <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print variable_get('site_name', ''); ?></a>.  //  
   </div>
 </div>
+<script>document.onload(CollapsibleLists.applyTo(document.querySelector("#content .field-name-body")));</script>

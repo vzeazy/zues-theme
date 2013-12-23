@@ -9,6 +9,7 @@ scripts[] = js/uniform.js
 scripts[] = js/superfish.js
 scripts[] = js/initialize.js
 scripts[] = js/responsive.js
+scripts[] = js/CollapsibleLists.js
 regions[sidebar_first]  = First Sidebar
 regions[header_right]  = First Sidebar
 regions[header]         = Header
