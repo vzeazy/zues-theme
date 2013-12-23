@@ -756,6 +756,12 @@ h1.page-title {
   font-size: 2em;
   line-height: 1.2em;
   margin-bottom: 10px;
+  background-color: #F7931D;
+  width: 100%;
+  display: block;
+  margin-left: -31px;
+  padding: 8px 31px;
+  color: #fff;
 }
 .page-taxonomy h1.page-title{text-transform: capitalize;}
 
@@ -1710,4 +1716,16 @@ div.messages {
     padding: 5px 4px;
     width: 98%;
     font-size: 13px;
+}
+
+/*** Autocomple Auto Tag Fix ***/
+.autocomplete-deluxe-item-delete {
+background: url("x.gif");
+display: block;
+font-size: 1px;
+height: 9px;
+position: absolute;
+right: 3px;
+top: 3px;
+width: 0;
 }
