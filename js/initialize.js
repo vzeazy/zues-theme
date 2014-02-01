@@ -11,6 +11,18 @@ jQuery(function($){
         speed: 'fast'
       });
     });
+	//collapsibleLists
+	$(function() { 
+	  $(CollapsibleLists.applyTo(document.querySelector("#content .field-name-body")));
+    });
+	//collapsibleTable
+	$(function() { 
+	  $("table.collapsible").children("tbody").hide();
+	  $("table.collapsible").children("thead").click(function () {
+           $(this).parent("table").children("tbody").slideToggle(50);
+	   $(this).parent("table").children("thead").toggleClass("expanded");
+        });
+	});
   
   }); // end doc ready
 }); // end function

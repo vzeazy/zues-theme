@@ -6,6 +6,7 @@ stylesheets[all][] = style.css
 stylesheets[all][] = css/responsive.css
 stylesheets[all][] = css/font-awesome.css
 scripts[] = js/uniform.js
+scripts[] = js/bmi.js
 scripts[] = js/superfish.js
 scripts[] = js/initialize.js
 scripts[] = js/responsive.js

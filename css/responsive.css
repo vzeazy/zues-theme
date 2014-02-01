@@ -227,6 +227,18 @@
   }
   #preface-area {padding: 10px}
   .three-steps div {width: 100%}
+  .page-user .ds-2col > .group-left {
+  float: left; /* LTR */
+  width: 100%;
+}
+.page-user .ds-2col > .group-left .view,
+.page-user .ds-2col > .group-left .node-form {
+  margin-right: 0;
+}
+
+.page-user .ds-2col > .group-right {
+  width: 100%;
+}
 }
 
 @media only screen and (max-width: 380px) {

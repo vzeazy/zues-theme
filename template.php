@@ -107,7 +107,6 @@ function best_responsive_page_alter($page) {
   drupal_add_html_head($viewport, 'viewport');
 }
 
-
 /**
  * Add javascript files for front-page jquery slideshow.
  */

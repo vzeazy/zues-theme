@@ -121,8 +121,8 @@
       </ul>
     </header>
   </div>
-  <div id="main-content" class="clearfix">
-    <?php if ($is_front): ?>
+  <?php print render($title_prefix); ?>
+      <?php if ($is_front): ?>
     <?php if ($site_slogan): ?><h2 id="site-slogan"><?php print $site_slogan; ?></h2><?php endif; ?>
     <?php if (theme_get_setting('slideshow_display','best_responsive')): ?>
     <div id="home-slider">
@@ -138,6 +138,9 @@
     </div>
     <?php endif; ?>
     <?php endif; ?>
+  <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
+  <?php print render($title_suffix); ?>
+  <div id="main-content" class="clearfix">
     <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last'] || $page['header']) : ?>
     <div id="preface-area" class="clearfix">
       <?php if($page['preface_first'] || $page['preface_middle'] || $page['preface_last']) : ?>
@@ -166,9 +169,6 @@
         <?php print $messages; ?>
         <?php if ($page['content_top']): ?><div id="content_top"><?php print render($page['content_top']); ?></div><?php endif; ?>
         <div id="content-wrap">
-          <?php print render($title_prefix); ?>
-          <?php if ($title): ?><h1 class="page-title"><?php print $title; ?></h1><?php endif; ?>
-          <?php print render($title_suffix); ?>
           <?php if (!empty($tabs['#primary'])): ?><div class="tabs-wrapper clearfix"><?php print render($tabs); ?></div><?php endif; ?>
           <?php print render($page['help']); ?>
           <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
@@ -212,4 +212,3 @@
 	  <?php print t('Copyright'); ?> &copy; <?php echo date("Y"); ?>, <a href="<?php print $front_page; ?>"><?php print variable_get('site_name', ''); ?></a>.  //  
   </div>
 </div>
-<script>document.onload(CollapsibleLists.applyTo(document.querySelector("#content .field-name-body")));</script>
